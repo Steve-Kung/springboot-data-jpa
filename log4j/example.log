@@ -1,0 +1,648 @@
+DEBUG main druid.sql.Connection - {conn-10001} connected
+DEBUG main druid.sql.Connection - {conn-10002} connected
+DEBUG main druid.sql.Connection - {conn-10003} connected
+DEBUG main druid.sql.Connection - {conn-10004} connected
+DEBUG main druid.sql.Connection - {conn-10005} connected
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG Druid-ConnectionPool-Destroy-15571629 druid.sql.Connection - {conn-10001} closed
+DEBUG Druid-ConnectionPool-Destroy-15571629 druid.sql.Connection - {conn-10002} closed
+DEBUG Druid-ConnectionPool-Destroy-15571629 druid.sql.Connection - {conn-10003} closed
+DEBUG Druid-ConnectionPool-Destroy-15571629 druid.sql.Connection - {conn-10004} closed
+DEBUG Druid-ConnectionPool-Destroy-15571629 druid.sql.Connection - {conn-10005} closed
+DEBUG main druid.sql.Connection - {conn-10001} connected
+DEBUG main druid.sql.Connection - {conn-10002} connected
+DEBUG main druid.sql.Connection - {conn-10003} connected
+DEBUG main druid.sql.Connection - {conn-10004} connected
+DEBUG main druid.sql.Connection - {conn-10005} connected
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Statement - {conn-10005, stmt-20000} created
+DEBUG main druid.sql.Statement - {conn-10005, stmt-20000} executed. 146.4109 millis. create table tb_worker (id integer not null auto_increment, email varchar(255), first_name varchar(255), last_name varchar(50), primary key (id)) engine=InnoDB
+DEBUG main druid.sql.Statement - {conn-10005, stmt-20000} closed
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} created. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} update executed. effort 1. 2.2738 millis. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50000} open
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50000} Header: [GENERATED_KEY]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50000} Result: [1]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50000} closed
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} clearParameters. 
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20002} created. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : [1]
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20002} Types : [INTEGER]
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20002, rs-50001} query executed. 2.5229 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50001} open
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50001} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50001} Result: [1, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50001} closed
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20002} clearParameters. 
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10001} connected
+DEBUG main druid.sql.Connection - {conn-10002} connected
+DEBUG main druid.sql.Connection - {conn-10003} connected
+DEBUG main druid.sql.Connection - {conn-10004} connected
+DEBUG main druid.sql.Connection - {conn-10005} connected
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} created. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [1]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50000} query executed. 10.4533 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} created. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} update executed. effort 1. 2.113 millis. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [GENERATED_KEY]
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [2]
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} clearParameters. 
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20002} created. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20002, rs-50002} query executed. 1.1139 millis. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} open
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Result: [1, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} closed
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20002} clearParameters. 
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [2]
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50003} query executed. 1.6053 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50003} open
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50003} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50003} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50003} closed
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [1]
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50004} query executed. 1.8265 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50004} open
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50004} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50004} Result: [1, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50004} closed
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20003} created. update tb_worker set email=?, first_name=?, last_name=? where id=?
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20003} Parameters : [stevekung0198@163.com, kung01, steve01, 1]
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20003} Types : [VARCHAR, VARCHAR, VARCHAR, INTEGER]
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20003} update executed. effort 1. 2.74 millis. update tb_worker set email=?, first_name=?, last_name=? where id=?
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20003} clearParameters. 
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20002, rs-50005} query executed. 1.8148 millis. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} open
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} Result: [1, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} closed
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20002} clearParameters. 
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10001} connected
+DEBUG main druid.sql.Connection - {conn-10002} connected
+DEBUG main druid.sql.Connection - {conn-10003} connected
+DEBUG main druid.sql.Connection - {conn-10004} connected
+DEBUG main druid.sql.Connection - {conn-10005} connected
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} created. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [1]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50000} query executed. 11.0995 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} created. delete from tb_worker where id=?
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [1]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [INTEGER]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} update executed. effort 1. 1.075 millis. delete from tb_worker where id=?
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} clearParameters. 
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} created. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002, rs-50001} query executed. 1.65 millis. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50001} open
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50001} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50001} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50001} closed
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} clearParameters. 
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10001} connected
+DEBUG main druid.sql.Connection - {conn-10002} connected
+DEBUG main druid.sql.Connection - {conn-10003} connected
+DEBUG main druid.sql.Connection - {conn-10004} connected
+DEBUG main druid.sql.Connection - {conn-10005} connected
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} created. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} update executed. effort 1. 6.1594 millis. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [GENERATED_KEY]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [3]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} created. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : []
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} Types : []
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001, rs-50001} query executed. 1.365 millis. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} clearParameters. 
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20002} created. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : [1]
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20002} Types : [INTEGER]
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20002, rs-50002} query executed. 1.5299 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} open
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} closed
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20002} clearParameters. 
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20000} update executed. effort 1. 1.5133 millis. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50003} open
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50003} Header: [GENERATED_KEY]
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50003} Result: [4]
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50003} closed
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-8 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-8 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-8 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-8 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-8 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : [2]
+DEBUG http-nio-8080-exec-8 druid.sql.Statement - {conn-10005, pstmt-20002} Types : [INTEGER]
+DEBUG http-nio-8080-exec-8 druid.sql.Statement - {conn-10005, pstmt-20002, rs-50004} query executed. 1.6037 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50004} open
+DEBUG http-nio-8080-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50004} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50004} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50004} closed
+DEBUG http-nio-8080-exec-8 druid.sql.Statement - {conn-10005, pstmt-20002} clearParameters. 
+DEBUG http-nio-8080-exec-8 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10001} connected
+DEBUG main druid.sql.Connection - {conn-10002} connected
+DEBUG main druid.sql.Connection - {conn-10003} connected
+DEBUG main druid.sql.Connection - {conn-10004} connected
+DEBUG main druid.sql.Connection - {conn-10005} connected
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} created. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [2]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50000} query executed. 11.0559 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [4]
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50001} query executed. 1.4973 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50001} open
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50001} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50001} Result: [4, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50001} closed
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10001} connected
+DEBUG main druid.sql.Connection - {conn-10002} connected
+DEBUG main druid.sql.Connection - {conn-10003} connected
+DEBUG main druid.sql.Connection - {conn-10004} connected
+DEBUG main druid.sql.Connection - {conn-10005} connected
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} created. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [4]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50000} query executed. 11.306 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [4, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [1]
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50001} query executed. 2.3293 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50001} open
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50001} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50001} closed
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} created. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} update executed. effort 1. 2.9517 millis. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50002} open
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50002} Header: [GENERATED_KEY]
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50002} Result: [5]
+DEBUG http-nio-8080-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50002} closed
+DEBUG http-nio-8080-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} clearParameters. 
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-6 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-6 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-6 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-6 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8080-exec-6 druid.sql.Statement - {conn-10005, pstmt-20001} update executed. effort 1. 2.1293 millis. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50003} open
+DEBUG http-nio-8080-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50003} Header: [GENERATED_KEY]
+DEBUG http-nio-8080-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50003} Result: [6]
+DEBUG http-nio-8080-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50003} closed
+DEBUG http-nio-8080-exec-6 druid.sql.Statement - {conn-10005, pstmt-20001} clearParameters. 
+DEBUG http-nio-8080-exec-6 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-6 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-6 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20001} update executed. effort 1. 1.7032 millis. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50004} open
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50004} Header: [GENERATED_KEY]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50004} Result: [7]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50004} closed
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20001} clearParameters. 
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20002} created. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20002, rs-50005} query executed. 1.2973 millis. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} open
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} Result: [3, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} Result: [4, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} Result: [5, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} Result: [6, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} Result: [7, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50005} closed
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20002} clearParameters. 
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [1]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50006} query executed. 1.8901 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50006} open
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50006} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50006} closed
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} update executed. effort 1. 1.2419 millis. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50007} open
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50007} Header: [GENERATED_KEY]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50007} Result: [8]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50007} closed
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} clearParameters. 
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002, rs-50008} query executed. 1.6711 millis. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50008} open
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50008} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50008} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50008} Result: [3, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50008} Result: [4, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50008} Result: [5, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50008} Result: [6, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50008} Result: [7, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50008} Result: [8, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50008} closed
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20002} clearParameters. 
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20002, rs-50009} query executed. 2.7798 millis. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50009} open
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50009} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50009} Result: [1, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50009} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50009} Result: [3, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50009} Result: [4, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50009} Result: [5, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50009} Result: [6, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50009} Result: [7, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50009} Result: [8, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50009} closed
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20002} clearParameters. 
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-6 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-6 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-6 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-6 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [VARCHAR, VARCHAR, VARCHAR]
+DEBUG http-nio-8080-exec-6 druid.sql.Statement - {conn-10005, pstmt-20001} update executed. effort 1. 1.738 millis. insert into tb_worker (email, first_name, last_name) values (?, ?, ?)
+DEBUG http-nio-8080-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50010} open
+DEBUG http-nio-8080-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50010} Header: [GENERATED_KEY]
+DEBUG http-nio-8080-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50010} Result: [9]
+DEBUG http-nio-8080-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50010} closed
+DEBUG http-nio-8080-exec-6 druid.sql.Statement - {conn-10005, pstmt-20001} clearParameters. 
+DEBUG http-nio-8080-exec-6 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-6 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-6 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20002, rs-50011} query executed. 1.1848 millis. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50011} open
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50011} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50011} Result: [1, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50011} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50011} Result: [3, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50011} Result: [4, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50011} Result: [5, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50011} Result: [6, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50011} Result: [7, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50011} Result: [8, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50011} Result: [9, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50011} closed
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20002} clearParameters. 
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [9]
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50012} query executed. 1.4519 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50012} open
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50012} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50012} Result: [9, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50012} closed
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20003} created. delete from tb_worker where id=?
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20003} Parameters : [9]
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20003} Types : [INTEGER]
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20003} update executed. effort 1. 1.1772 millis. delete from tb_worker where id=?
+DEBUG http-nio-8080-exec-9 druid.sql.Statement - {conn-10005, pstmt-20003} clearParameters. 
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-9 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-10 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-10 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-10 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
+DEBUG http-nio-8080-exec-10 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
+DEBUG http-nio-8080-exec-10 druid.sql.Statement - {conn-10005, pstmt-20002, rs-50013} query executed. 2.5212 millis. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50013} open
+DEBUG http-nio-8080-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50013} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50013} Result: [1, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50013} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50013} Result: [3, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50013} Result: [4, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50013} Result: [5, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50013} Result: [6, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50013} Result: [7, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50013} Result: [8, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50013} closed
+DEBUG http-nio-8080-exec-10 druid.sql.Statement - {conn-10005, pstmt-20002} clearParameters. 
+DEBUG http-nio-8080-exec-10 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-10 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-10 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [1]
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50014} query executed. 2.1648 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50014} open
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50014} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50014} Result: [1, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50014} closed
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} created. update tb_worker set email=?, first_name=?, last_name=? where id=?
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} Parameters : [stevekung0198@163.com, kung01, steve01, 1]
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} Types : [VARCHAR, VARCHAR, VARCHAR, INTEGER]
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} update executed. effort 1. 1.8028 millis. update tb_worker set email=?, first_name=?, last_name=? where id=?
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} clearParameters. 
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [1]
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50015} query executed. 1.3707 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50015} open
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50015} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50015} Result: [1, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50015} closed
+DEBUG http-nio-8080-exec-4 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [1]
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50016} query executed. 1.675 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50016} open
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50016} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50016} Result: [1, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50016} closed
+DEBUG http-nio-8080-exec-5 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-5 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20002, rs-50017} query executed. 1.9463 millis. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50017} open
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50017} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50017} Result: [1, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50017} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50017} Result: [3, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50017} Result: [4, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50017} Result: [5, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50017} Result: [6, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50017} Result: [7, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50017} Result: [8, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50017} closed
+DEBUG http-nio-8080-exec-7 druid.sql.Statement - {conn-10005, pstmt-20002} clearParameters. 
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-7 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-8 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-8 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-8 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-8 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-8 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [1]
+DEBUG http-nio-8080-exec-8 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [INTEGER]
+DEBUG http-nio-8080-exec-8 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50018} query executed. 2.4777 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50018} open
+DEBUG http-nio-8080-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50018} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50018} Result: [1, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50018} closed
+DEBUG http-nio-8080-exec-8 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-8 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10001} connected
+DEBUG main druid.sql.Connection - {conn-10002} connected
+DEBUG main druid.sql.Connection - {conn-10003} connected
+DEBUG main druid.sql.Connection - {conn-10004} connected
+DEBUG main druid.sql.Connection - {conn-10005} connected
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG main druid.sql.Connection - {conn-10005} pool-connect
+DEBUG main druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} created. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : []
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Types : []
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000, rs-50000} query executed. 10.0197 millis. select worker0_.id as id1_0_, worker0_.email as email2_0_, worker0_.first_name as first_na3_0_, worker0_.last_name as last_nam4_0_ from tb_worker worker0_
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [2, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [3, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [4, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [5, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [6, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7, stevekung98@163.com, kung, steve]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [8, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8080-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} clearParameters. 
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} created. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [1]
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [INTEGER]
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001, rs-50001} query executed. 2.1801 millis. select worker0_.id as id1_0_0_, worker0_.email as email2_0_0_, worker0_.first_name as first_na3_0_0_, worker0_.last_name as last_nam4_0_0_ from tb_worker worker0_ where worker0_.id=?
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [id, email, first_name, last_name]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1, stevekung0198@163.com, kung01, steve01]
+DEBUG http-nio-8080-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
+DEBUG http-nio-8080-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} clearParameters. 
+DEBUG http-nio-8080-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
